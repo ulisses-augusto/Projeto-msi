@@ -1,0 +1,343 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #857f7f;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #a7a6a5;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os links se ajustem em dispositivos menores */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #7b4b2a;
+}
+
+/* Conteúdo geral */
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sub-abas do Painel Principal */
+.sub-nav {
+    margin: 20px 0;
+    display: flex;
+    gap: 15px; /* Mantém as abas separadas */
+}
+
+.sub-nav a {
+    background-color: #e1e1e1;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sub-nav a:hover {
+    background-color: #d0d0d0;
+}
+
+/* Conteúdo das abas */
+.tab-content {
+    display: none; 
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9; 
+}
+
+.tab-content:target {
+    display: block; 
+}
+
+/* Formulários */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    margin-top: 10px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="date"],
+.form input[type="time"],
+.form input[type="submit"],
+textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form input[type="submit"] {
+    background-color: #8b5a2b;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #7b4b2a;
+}
+
+/* Listas */
+.medicamentos-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.medicamentos-list li {
+    background-color: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Galeria de imagens */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Container para quem somos */
+.quem-somos-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto e título */
+.quem-somos-texto h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.quem-somos-texto p {
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Integrantes */
+.integrantes {
+    margin-top: 40px;
+}
+
+.integrantes h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.integrantes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.integrante-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Fotos dos integrantes */
+.integrante-foto img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Nome dos integrantes */
+.integrante-nome p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Container de login e registro (mantendo o estilo original) */
+.login-container, .register-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border: 1px solid #8b5a2b;
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 12px;
+    background-color: #8b5a2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #7b4b2a;
+}
+
+/* Postagens */
+.postagem {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.postagem h3 {
+    margin: 0;
+}
+
+/* Comentários */
+.comentarios {
+    margin-top: 10px;
+    padding-left: 20px;
+    border-left: 2px solid #8b5a2b;
+}
+
+.comentarios p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* Estilizando o select de avaliações */
+select[name="avaliacao"] {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botões */
+input[type="submit"] {
+    margin-top: 10px;
+    background-color: #8b5a2b;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #7b4b2a;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #8b5a2b;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .login-container, .register-container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .integrante-item {
+        width: 100%; /* Deixa os itens dos integrantes ocuparem 100% em telas menores */
+        margin-bottom: 15px;
+    }
+
+    .sub-nav {
+        flex-direction: column; /* Abas do painel principal ficam em colunas no mobile */
+    }
+}
